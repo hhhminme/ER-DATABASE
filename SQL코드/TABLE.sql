@@ -1,0 +1,310 @@
+DROP TABLE `PATIENT`;
+
+CREATE TABLE `PATIENT` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `ID` varchar(255) default NULL,
+  `EMAIL` varchar(255) default NULL,
+  `ADRESS` varchar(255),
+  `NAME` varchar(255) default NULL,
+  `REGISTNUM` varchar(13) default NULL,
+  `SEX` varchar(255) default NULL,
+  `JOB` varchar(255) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("2","sem.ut@Donec.ca","Riesa","조이","16121211 6352","FEMALE","개발자");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("5","venenatis.lacus@dolorFusce.co.uk","Chiniot","아이린","16181012 1382","FEMALE","미술가");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("3","ante.Vivamus.non@congue.org","Roccalumera","슬기","16710402 2699","FEMALE","운동선수");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("10","ac@amagnaLorem.com","Wieze","전정국","16910619 3841","FEMALE","개발자");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("5","commodo@Nullamvelit.edu","St. Albert","조이","16660820 8903","FEMALE","물리학자");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("1","magnis@taciti.org","Güstrow","예리","16810701 3842","MALE","경찰관");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("9","ipsum.nunc.id@malesuadaInteger.net","Arica","웬디","16220816 1154","MALE","조종사");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("2","eu.placerat@porttitor.ca","Tilburg","김석진","16310422 6752","MALE","교수");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("3","ridiculus@Uttinciduntvehicula.org","Bear","슬기","16530527 4911","FEMALE","물리학자");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("10","vitae.aliquam.eros@nullaCraseu.org","PiŽtrebais","예리","16730430 3964","MALE","");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("10","non.dui.nec@DonecegestasDuis.ca","Umerkot","전정국","16280611 2765","MALE","간호사");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("10","Aenean@malesuadafamesac.edu","Wonju","아이린","16020317 3406","FEMALE","소방관");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("7","Phasellus.in.felis@atauctorullamcorper.org","Blankenberge","예리","16070626 8661","FEMALE","가수");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("9","sem.ut@Integersemelit.org","Romeral","박지민","16981219 5452","FEMALE","운동선수");
+INSERT INTO `PATIENT` (`ID`,`EMAIL`,`ADRESS`,`NAME`,`REGISTNUM`,`SEX`,`JOB`) VALUES ("10","blandit@ipsumleoelementum.org","Medea","예리","16090421 3311","MALE","교수");
+
+DROP TABLE `PROTECTOR`;
+
+CREATE TABLE `PROTECTOR` (
+  `id` number primary key,
+  `NAME` varchar2(255) default NULL,
+  `SEX` varchar2(255) default NULL,
+  `REGISTNUM` varchar2(13) default NULL,
+  `PHONENUM` varchar2(100) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('박지효','MALE','16321218 1386','029-123-4334');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('손채영','FEMALE','16470318 7189','038-808-3506');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('강다니엘','FEMALE','16610612 6961','045-089-7867');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('박우진','FEMALE','16860607 5771','068-512-8046');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('김재환','MALE','16680807 3362','032-679-2213');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('묘이미나','FEMALE','16170913 5238','034-134-0733');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('김다현','MALE','16940610 0751','046-416-1925');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('히라이모모','FEMALE','16130530 8742','056-791-7510');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('미나토자키사나','FEMALE','16890506 1787','031-251-7509');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('저우쯔위','FEMALE','16770607 7182','052-071-8243');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('라이관린','FEMALE','16730503 6258','091-180-3053');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('김다현','FEMALE','16020720 7341','088-528-7750');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('김재환','MALE','16180715 3075','085-589-5671');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('라이관린','MALE','16450505 0601','079-175-5529');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('옹성우','MALE','16990112 1245','006-479-8748');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('손채영','MALE','16480826 6078','068-279-4086');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('유정연','MALE','16560521 6539','085-555-6581');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('김재환','FEMALE','16490509 8150','081-195-4695');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('황민현','MALE','16990917 1358','076-608-1417');
+INSERT INTO `PROTECTOR` (`NAME`,`SEX`,`REGISTNUM`,`PHONENUM`) VALUES ('하성운','MALE','16020917 3921','008-440-9672');
+
+DROP TABLE `DOCTOR`;
+
+CREATE TABLE `DOCTOR` (
+  `id` number primary key,
+  `ID` varchar2(255) default NULL,
+  `DEPTNAME` varchar2(255) default NULL,
+  `SEX` varchar2(255) default NULL,
+  `NAME` varchar2(255) default NULL,
+  `PHONENUM` varchar2(100) default NULL,
+  `EMAIL` varchar2(255) default NULL,
+  `POSITION` varchar2(255) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('9','신경외과','FEMALE','김민석','010-7371-8008','sodales.purus@ac.edu','조교수');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('6','신경외과','MALE','임윤아','010-1611-9395','Mauris.vestibulum@risus.co.uk','조교수');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('16','영상의학과','MALE','김민석','010-7154-9899','Vivamus@aaliquet.com','펠로우');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('20','신경외과','MALE','김민석','010-6181-4932','amet@sollicitudincommodo.net','부교수');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('17','마취과','MALE','정수연','010-0320-4447','senectus.et@ultricesaauctor.com','펠로우');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('2','정형외과','MALE','김준면','010-1474-9630','libero.mauris.aliquam@dolorQuisquetincidunt.edu','교수');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('8','영상의학과','FEMALE','도경수','010-8497-2221','metus.vitae@interdumSedauctor.net','인턴');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('7','외과','MALE','김민석','010-0401-3457','purus.Duis@sem.com','레지던트');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('11','흉부외과','FEMALE','서주현','010-1141-3260','Suspendisse.commodo@mauris.ca','조교수');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('12','흉부외과','FEMALE','이순규','010-4039-7778','consectetuer@semper.edu','교수');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('1','외과','MALE','이순규','010-9909-2828','placerat.velit.Quisque@molestiepharetranibh.net','레지던트');
+INSERT INTO `DOCTOR` (`ID`,`DEPTNAME`,`SEX`,`NAME`,`PHONENUM`,`EMAIL`,`POSITION`) VALUES ('13','흉부외과','MALE','임윤아','010-7659-4866','Aliquam.erat@luctusCurabitur.org','조교수');
+
+DROP TABLE `CHART`;
+
+CREATE TABLE `CHART` (
+  `id` number primary key,
+  `CHART_ID` varchar2(255) default NULL,
+  `OPINION` varchar2(255) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('38','Cephalexin, Naproxen, Alprazolam');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('40','Simvastatin, Amoxicillin Trihydrate/Potassium Clavulanate, Viagra');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('8','Metformin HCl, Warfarin Sodium, Fluoxetine HCl');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('20','Alprazolam, Potassium Chloride, Methylprednisolone');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('30','Atenolol, Simvastatin, Azithromycin');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('50','Warfarin Sodium, Sertraline HCl, Atenolol');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('38','Lovastatin, Fluoxetine HCl, Zolpidem Tartrate');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('6','Furosemide, Fluoxetine HCl, Trazodone HCl');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('16','Alprazolam, Seroquel, Allopurinol');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('44','Zetia, Doxycycline Hyclate, Prednisone');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('8','Naproxen, Actos, Promethazine HCl');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('26','Hydrocodone/APAP, Ranitidine HCl, Triamterene/Hydrochlorothiazide');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('36','Premarin, Ciprofloxacin HCl, Carvedilol');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('22','Klor-Con M20, Ibuprofen (Rx), Diazepam');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('10','Symbicort, Clonazepam, Metoprolol Tartrate ');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('18','Naproxen, TriNessa, Cyclobenzaprin HCl');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('40','Gianvi, Zyprexa, Januvia');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('34','Diovan HCT, Metoprolol Tartrate , Azithromycin');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('16','Tramadol HCl, Hydrochlorothiazide, Lorazepam');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('18','APAP/Codeine, LevothyroxineSodium, Paroxetine HCl');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('10','Sertraline HCl, Fluticasone Propionate, APAP/Codeine');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('38','Lyrica, Clindamycin HCl, Cyclobenzaprin HCl');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('20','Cephalexin, Metoprolol Succinate, Amlodipine Besylate');
+INSERT INTO `CHART` (`CHART_ID`,`OPINION`) VALUES ('4','Furosemide, Alendronate Sodium, Tramadol HCl');
+
+DROP TABLE `NURSE`;
+
+CREATE TABLE `NURSE` (
+  `NURSE_ID` mediumint,
+  `DEPTNAME` varchar(255) default NULL,
+  `NAME` varchar(255) default NULL,
+  `PHONENUM` varchar(100) default NULL,
+  `SEX` varchar(255) default NULL,
+  `EMAIL` varchar(255) default NULL,
+  `POSITION` varchar(255) default NULL
+);
+
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (1,"수술실","남다원","010-9311-7547","MALE","diam@semconsequatnec.net","주임간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (2,"응급실","문별이","010-3377-7297","MALE","nunc.nulla@antedictumcursus.org","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (3,"수술실","추소정","010-4257-3941","FEMALE","a.scelerisque@at.co.uk","책임간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (4,"중환자실","이루다","010-8057-2721","MALE","parturient@ullamcorpereu.net","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (5,"수술실","김용선","010-5256-6774","MALE","Phasellus@facilisismagna.org","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (6,"수술실","임다영","010-2181-0230","MALE","luctus@adipiscingfringilla.net","책임간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (7,"응급실","이여름","010-6510-2497","MALE","commodo@magnaNam.edu","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (8,"응급실","박수빈","010-2975-6039","MALE","elementum.lorem.ut@felis.co.uk","주임간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (9,"중환자실","김용선","010-2872-0097","FEMALE","augue.eu.tempor@loremacrisus.ca","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (10,"응급실","김용선","010-3134-8014","FEMALE","in.consequat@Aliquamgravidamauris.net","평간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (11,"중환자실","김용선","010-5087-3486","FEMALE","nonummy.Fusce@tellus.org","주임간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (12,"병동","김현정","010-2485-4243","MALE","ultricies@purus.co.uk","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (13,"응급실","박수빈","010-9561-2827","MALE","vitae@Proinvelit.ca","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (14,"중환자실","이여름","010-9388-1126","MALE","dapibus.ligula.Aliquam@odiovel.org","주임간호사");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (15,"병동","이여름","010-6323-5667","MALE","diam.at@sit.com","수간호사대리");
+INSERT INTO `NURSE` (`NURSE_ID`,`DEPTNAME`,`NAME`,`PHONENUM`,`SEX`,`EMAIL`,`POSITION`) VALUES (16,"응급실","추소정","010-8943-3027","FEMALE","facilisis.lorem@loremipsumsodales.ca","수간호사");
+
+DROP TABLE `COORDINATOR`;
+
+CREATE TABLE `COORDINATOR` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `CRN_ID` mediumint,
+  `NAME` varchar(255) default NULL,
+  `SEX` varchar(255) default NULL,
+  `PHONENUM` varchar(100) default NULL,
+  `DEPTNAME` varchar(255) default NULL,
+  `EMAIL` varchar(255) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (1,"최효정","MALE","010-4662-5453","병동","rhoncus.Nullam@Seddictum.ca");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (2,"김지수","MALE","010-8601-1440","중환자실","vitae.orci@enimMauris.ca");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (3,"김지수","MALE","010-1011-4354","중환자실","sed.tortor.Integer@ante.org");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (4,"유시아","FEMALE","010-8927-2653","응급실","lectus.pede.ultrices@laciniaat.com");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (5,"유시아","MALE","010-1470-4555","병동","amet.ornare@duisemper.co.uk");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (6,"최예원","FEMALE","010-1404-8014","중환자실","mi.pede.nonummy@tempor.edu");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (7,"김제니","MALE","010-0365-4703","병동","Phasellus@ultriciessemmagna.co.uk");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (8,"최예원","FEMALE","010-5515-4604","중환자실","Cum@vulputatedui.com");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (9,"김지수","MALE","010-0138-1265","응급실","at.velit@velmauris.com");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (10,"김지호","FEMALE","010-6793-0601","수술실","massa.Mauris@diameu.co.uk");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (11,"김지수","MALE","010-0511-7135","중환자실","In@mi.ca");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (12,"김제니","MALE","010-9094-3761","병동","amet.risus.Donec@nec.edu");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (13,"김지수","MALE","010-4650-6847","수술실","ultrices.mauris.ipsum@Mauriseuturpis.org");
+INSERT INTO `COORDINATOR` (`CRN_ID`,`NAME`,`SEX`,`PHONENUM`,`DEPTNAME`,`EMAIL`) VALUES (14,"유시아","FEMALE","010-9346-1541","병동","eu@Duisrisusodio.net");
+
+DROP TABLE `PATIENTS_ROOM`;
+
+CREATE TABLE `PATIENTS_ROOM` (
+  `ROOMNUM` number default NULL,
+  `FLOOR` varchar2(255) default NULL,
+  `MAX_PERSON_NUM` varchar2(50) default NULL,
+  `CUR_PERSON_NUM` varchar2(50) default NULL,
+  `STATE` varchar2(255) default NULL
+);
+
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (1,'4',1,2,'N');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (2,'4',7,10,'N');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (3,'3',3,10,'Y');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (4,'2',3,7,'Y');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (5,'1',3,4,'Y');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (6,'1',10,8,'N');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (7,'2',8,2,'Y');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (8,'3',5,8,'Y');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (9,'3',6,5,'N');
+INSERT INTO `PATIENTS_ROOM` (`ROOMNUM`,`FLOOR`,`MAX_PERSON_NUM`,`CUR_PERSON_NUM`,`STATE`) VALUES (10,'1',3,1,'Y');
+
+DROP TABLE `OPERATING_ROOM`;
+
+CREATE TABLE `OPERATING_ROOM` (
+  `OPERNUM` number default NULL,
+  `STATE` varchar2(255) default NULL
+);
+
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (1,'N');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (2,'Y');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (3,'Y');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (4,'Y');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (5,'N');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (6,'N');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (7,'Y');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (8,'N');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (9,'Y');
+INSERT INTO `OPERATING_ROOM` (`OPERNUM`,`STATE`) VALUES (10,'Y');
+
+DROP TABLE `LABORATORY`;
+
+CREATE TABLE `LABORATORY` (
+  `LABONAME` number default NULL,
+  `STATE` varchar2(255) default NULL
+);
+
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (1,'N');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (2,'Y');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (3,'N');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (4,'N');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (5,'Y');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (6,'Y');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (7,'Y');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (8,'N');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (9,'Y');
+INSERT INTO `LABORATORY` (`LABONAME`,`STATE`) VALUES (10,'Y');
+
+DROP TABLE `DRIVER`;
+
+CREATE TABLE `DRIVER` (
+  `DRIVER_ID` number default NULL,
+  `NAME` varchar2(255) default NULL,
+  `SEX` varchar2(255) default NULL,
+  `POSITION` varchar2(255) default NULL,
+  `PHONENUM` varchar2(100) default NULL,
+  `EMAIL` varchar2(255) default NULL,
+  `ROLE` varchar2(255) default NULL
+);
+
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (1,'이성민','MALE','팀장','010-3524-5364','enim@amet.co.uk','파일럿');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (2,'이혁재','FEMALE','과장','010-8538-2488','tellus@NullaaliquetProin.edu','파일럿');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (3,'이혁재','FEMALE','과장','010-1816-8583','libero@ridiculusmus.net','운전사');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (4,'이혁재','FEMALE','과장','010-4569-1429','elit.Etiam.laoreet@mienim.ca','운전사');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (5,'이동해','FEMALE','담당','010-9435-8482','vel@pharetra.ca','파일럿');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (6,'김려욱','FEMALE','과장','010-4171-9890','ultrices.a.auctor@tellusjustosit.net','파일럿');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (7,'이성민','MALE','과장','010-6155-3292','enim.gravida.sit@placerat.ca','운전사');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (8,'이동해','MALE','과장','010-9343-1205','neque@velarcuCurabitur.edu','운전사');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (9,'신동희','FEMALE','담당','010-3483-6536','non.bibendum.sed@Maecenasornareegestas.co.uk','운전사');
+INSERT INTO `DRIVER` (`DRIVER_ID`,`NAME`,`SEX`,`POSITION`,`PHONENUM`,`EMAIL`,`ROLE`) VALUES (10,'김기범','MALE','팀장','010-9074-2553','ipsum.dolor@senectusetnetus.ca','파일럿');
+
+DROP TABLE `MAJOR`;
+
+CREATE TABLE `MAJOR` (
+  `MAJORNUM` number default NULL,
+  `MAJORNAME` varchar2(255) default NULL
+);
+
+INSERT INTO `MAJOR` (`MAJORNUM`,`MAJORNAME`) VALUES (1,'외과');
+INSERT INTO `MAJOR` (`MAJORNUM`,`MAJORNAME`) VALUES (2,'정형외과');
+INSERT INTO `MAJOR` (`MAJORNUM`,`MAJORNAME`) VALUES (3,'신경외과');
+INSERT INTO `MAJOR` (`MAJORNUM`,`MAJORNAME`) VALUES (4,'흉부외과');
+INSERT INTO `MAJOR` (`MAJORNUM`,`MAJORNAME`) VALUES (5,'마취과');
+INSERT INTO `MAJOR` (`MAJORNUM`,`MAJORNAME`) VALUES (6,'영상의학과');
+
+DROP TABLE `DEPARTMENT`;
+
+CREATE TABLE `DEPARTMENT` (
+  `DEPTNUM` number default NULL,
+  `DEPTNAME` varchar2(255) default NULL
+);
+
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (1,'외과');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (2,'정형외과');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (3,'신경외과');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (4,'흉부외과');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (5,'마취과');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (6,'영상의학과');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (7,'수술실');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (8,'응급실');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (9,'중환자실');
+INSERT INTO `DEPARTMENT` (`DEPTNUM`,`DEPTNAME`) VALUES (10,'병동');
+
+
+DROP TABLE `TRANSPORT`;
+
+CREATE TABLE `TRANSPORT` (
+  `TRANSNUM` number default NULL,
+  `KIND` varchar2(255) default NULL
+);
+
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (1,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (2,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (3,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (4,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (5,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (6,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (7,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (8,'앰뷸런스');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (9,'닥터헬기');
+INSERT INTO `TRANSPORT` (`TRANSNUM`,`KIND`) VALUES (10,'닥터헬기');
